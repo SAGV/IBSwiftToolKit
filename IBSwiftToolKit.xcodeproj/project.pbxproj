@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F5435351CCC3C0D00D3F2F4 /* IBSwiftToolKit-tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F5435341CCC3C0D00D3F2F4 /* IBSwiftToolKit-tvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9F870EBE1CAD5F61004F92A4 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F870EBD1CAD5F61004F92A4 /* UILabel.swift */; };
 		9F978DBB1C95C81E0056A87C /* IBSwiftToolKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F978DBA1C95C81E0056A87C /* IBSwiftToolKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9F978DC51C95C8660056A87C /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F978DC41C95C8660056A87C /* UIViewController.swift */; };
@@ -37,6 +38,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9F3F74E11CCC3ED7008FE56B /* SwiftToolKit-tvOS-umbrella.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftToolKit-tvOS-umbrella.h"; sourceTree = "<group>"; };
+		9F5435321CCC3C0C00D3F2F4 /* IBSwiftToolKitTvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IBSwiftToolKitTvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F5435341CCC3C0D00D3F2F4 /* IBSwiftToolKit-tvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IBSwiftToolKit-tvOS.h"; sourceTree = "<group>"; };
+		9F5435361CCC3C0D00D3F2F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F870EBD1CAD5F61004F92A4 /* UILabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
 		9F978DB71C95C81E0056A87C /* IBSwiftToolKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IBSwiftToolKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F978DBA1C95C81E0056A87C /* IBSwiftToolKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBSwiftToolKit.h; sourceTree = "<group>"; };
@@ -69,6 +74,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9F54352E1CCC3C0C00D3F2F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9F978DB31C95C81E0056A87C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -79,10 +91,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F5435331CCC3C0D00D3F2F4 /* IBSwiftToolKit-tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				9F5435341CCC3C0D00D3F2F4 /* IBSwiftToolKit-tvOS.h */,
+				9F3F74E11CCC3ED7008FE56B /* SwiftToolKit-tvOS-umbrella.h */,
+				9F5435361CCC3C0D00D3F2F4 /* Info.plist */,
+			);
+			path = "IBSwiftToolKit-tvOS";
+			sourceTree = "<group>";
+		};
 		9F978DAD1C95C81D0056A87C = {
 			isa = PBXGroup;
 			children = (
 				9F978DB91C95C81E0056A87C /* IBSwiftToolKit */,
+				9F5435331CCC3C0D00D3F2F4 /* IBSwiftToolKit-tvOS */,
 				9F978DB81C95C81E0056A87C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				9F978DB71C95C81E0056A87C /* IBSwiftToolKit.framework */,
+				9F5435321CCC3C0C00D3F2F4 /* IBSwiftToolKitTvOS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -189,6 +213,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		9F54352F1CCC3C0C00D3F2F4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F5435351CCC3C0D00D3F2F4 /* IBSwiftToolKit-tvOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9F978DB41C95C81E0056A87C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -200,6 +232,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		9F5435311CCC3C0C00D3F2F4 /* IBSwiftToolKitTvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F5435391CCC3C0D00D3F2F4 /* Build configuration list for PBXNativeTarget "IBSwiftToolKitTvOS" */;
+			buildPhases = (
+				9F54352D1CCC3C0C00D3F2F4 /* Sources */,
+				9F54352E1CCC3C0C00D3F2F4 /* Frameworks */,
+				9F54352F1CCC3C0C00D3F2F4 /* Headers */,
+				9F5435301CCC3C0C00D3F2F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IBSwiftToolKitTvOS;
+			productName = "IBSwiftToolKit-tvOS";
+			productReference = 9F5435321CCC3C0C00D3F2F4 /* IBSwiftToolKitTvOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		9F978DB61C95C81E0056A87C /* IBSwiftToolKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F978DBF1C95C81E0056A87C /* Build configuration list for PBXNativeTarget "IBSwiftToolKit" */;
@@ -227,6 +277,9 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Ivan Brazhnikov";
 				TargetAttributes = {
+					9F5435311CCC3C0C00D3F2F4 = {
+						CreatedOnToolsVersion = 7.3;
+					};
 					9F978DB61C95C81E0056A87C = {
 						CreatedOnToolsVersion = 7.3;
 					};
@@ -245,11 +298,19 @@
 			projectRoot = "";
 			targets = (
 				9F978DB61C95C81E0056A87C /* IBSwiftToolKit */,
+				9F5435311CCC3C0C00D3F2F4 /* IBSwiftToolKitTvOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		9F5435301CCC3C0C00D3F2F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9F978DB51C95C81E0056A87C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -260,6 +321,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9F54352D1CCC3C0C00D3F2F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9F978DB21C95C81E0056A87C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -296,6 +364,44 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		9F5435371CCC3C0D00D3F2F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "IBSwiftToolKit-tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dantelab.IBSwiftToolKit-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		9F5435381CCC3C0D00D3F2F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "IBSwiftToolKit-tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dantelab.IBSwiftToolKit-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
 		9F978DBD1C95C81E0056A87C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -427,6 +533,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9F5435391CCC3C0D00D3F2F4 /* Build configuration list for PBXNativeTarget "IBSwiftToolKitTvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F5435371CCC3C0D00D3F2F4 /* Debug */,
+				9F5435381CCC3C0D00D3F2F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9F978DB11C95C81D0056A87C /* Build configuration list for PBXProject "IBSwiftToolKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
